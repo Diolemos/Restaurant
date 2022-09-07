@@ -1,15 +1,35 @@
+import _ from 'lodash';
 import './style.css'
-import {createContent,createHeader,createCopy} from './content'
-import mainImage from './grill.jpg' //imports image
 
+function header(){
+    const header = document.createElement('header');
 
-createContent()
-createHeader()
-//creates image
-const grill = new Image()
-grill.src = mainImage
-grill
+    const logo = document.createElement('div')
+    logo.classList.add('logo')
+  
+    logo.innerText = 'Logo'
+    header.appendChild(logo)
+   
 
-document.getElementById('content').appendChild(grill)
+    const nav = document.createElement('nav')
+    const ul = document.createElement('ul')
+    const homeLi = document.createElement('li')
+    homeLi.innerText = "home"
+    ul.appendChild(homeLi)
 
-createCopy()
+    const menuLi = document.createElement('li')
+    menuLi.innerText = "menu"
+    ul.appendChild(menuLi)
+
+    const aboutUs = document.createElement('li')
+    aboutUs.innerText = "About Us"
+    ul.appendChild(aboutUs)
+
+    nav.appendChild(ul)
+    header.appendChild(nav)
+
+    return header
+
+}
+
+document.body.appendChild(header())
