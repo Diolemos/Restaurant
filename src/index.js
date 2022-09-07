@@ -51,6 +51,15 @@ function grillImage(){
     return grillImage
 }
 
+function description(){
+    const copyText = document.createElement('p');
+    copyText.classList.add('copyText');
+    copyText.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non condimentum neque. Integer quis ligula aliquet, varius metus sit amet, pretium ipsum. Curabitur eleifend iaculis nibh non volutpat. Donec mauris eros, tempor vel aliquam nec, ultricies nec felis. Nunc ac aliquam mi, quis euismod justo. Nullam sagittis bibendum arcu nec mollis. Nunc suscipit, tellus id ullamcorper bibendum, ex eros sagittis risus, eget rutrum velit libero at diam. Morbi sed vestibulum ante. Donec egestas pulvinar nulla ullamcorper cursus. Fusce in faucibus massa. Proin mattis lacinia lacus sed ultricies. Aliquam convallis dolor velit, aliquam dapibus metus vestibulum vel. Cras sit amet magna ultrices, suscipit elit non, semper lectus. Aenean non velit vitae massa suscipit convallis. Vivamus eget pulvinar lorem. Quisque ante sem, pellentesque quis viverra quis, finibus sed erat. Curabitur pharetra euismod risus, eu euismod diam interdum nec. Nullam lobortis pretium dolor laoreet commodo. Vivamus libero nisi, sodales eget dolor at, tincidunt pellentesque tortor. Phasellus tempor nunc et suscipit dictum. Vivamus eu lorem velit. Nullam eget turpis ante. Suspendisse molestie quis purus id tincidunt. Nunc porttitor turpis justo, id ultrices nisl faucibus ac. Nullam pretium bibendum risus in placerat. Nunc a tempus ipsum."
+
+    return copyText
+}
+
 document.body.appendChild(header())
 document.body.appendChild(h1())
 document.body.appendChild(grillImage())
+document.body.appendChild(description())
