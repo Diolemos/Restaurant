@@ -1,3 +1,4 @@
+import map from './assets/restaurant-location.png'
 function createContact() {
     const contact = document.createElement('div')
     contact.classList.add('contact')
@@ -9,7 +10,7 @@ function createContact() {
     address.textContent = '📍 Bacon road 55, San Antonio, TX'
   
     const restaurantLocation = document.createElement('img')
-    restaurantLocation.src = './assets/restaurant-location.png'
+    restaurantLocation.src = map
     restaurantLocation.alt = 'Burger Duke restaurant location'
   
     contact.appendChild(phoneNumber)
