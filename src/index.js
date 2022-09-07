@@ -59,7 +59,22 @@ function description(){
     return copyText
 }
 
+function footer(){
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+    const logo = document.createElement('div')
+    logo.classList.add('logo')
+  
+    logo.innerText = 'Logo'
+    footer.appendChild(logo)
+
+    return footer
+
+
+}
+
 document.body.appendChild(header())
 document.body.appendChild(h1())
 document.body.appendChild(grillImage())
 document.body.appendChild(description())
+document.body.appendChild(footer())
