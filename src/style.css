@@ -10,9 +10,8 @@ body{
     
     background-color: rgb(250, 235, 215);
     color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    
+   
     
 }
 
@@ -43,4 +42,18 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.title {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 350px;
+margin-top: 80px;
 }
