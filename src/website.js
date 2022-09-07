@@ -89,7 +89,7 @@ function createFooter() {
   githubLink.href = "https://github.com/DioLemos";
 
   const githubIcon = document.createElement("i");
-  githubIcon.classList.add("fab");
+  githubIcon.classList.add("fa-brands");
   githubIcon.classList.add("fa-github");
 
   githubLink.appendChild(githubIcon);
