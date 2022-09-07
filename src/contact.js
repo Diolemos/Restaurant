@@ -3,10 +3,10 @@ function createContact() {
     contact.classList.add('contact')
   
     const phoneNumber = document.createElement('p')
-    phoneNumber.textContent = '📞 123 456 789'
+    phoneNumber.textContent = '☎️ 123 456 789'
   
     const address = document.createElement('p')
-    address.textContent = '🏠 Bacon road 55, San Antonio, TX'
+    address.textContent = '📍 Bacon road 55, San Antonio, TX'
   
     const restaurantLocation = document.createElement('img')
     restaurantLocation.src = './assets/restaurant-location.png'
