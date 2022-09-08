@@ -1,4 +1,15 @@
-import burger1 from './assets/burgers/burger1.jpg'
+import jrduke from './assets/burgers/jrduke.png';
+import burgerDuke from './assets/burgers/burgerduke.png'
+import bbqDuke from './assets/burgers/bbqDuke.png'
+import crispyFish from './assets/burgers/crispyfish.png'
+import doubleDuke from './assets/burgers/doubleduke.png';
+import ohDeer from './assets/burgers/ohdeer.png';
+import omelet from './assets/burgers/omeletduke.png';
+import kingBuster from './assets/burgers/kingbuster.png';
+import keto from './assets/burgers/ketoburger.png'
+import el from './assets/burgers/elpasospecial.png';
+
+
 
 function createMenu() {
     const menu = document.createElement("div");
@@ -8,50 +19,56 @@ function createMenu() {
         
         //Need to create menu items... for now, I will use these placeholders
       createMenuItem(
-        "burger1", burger1,
-        "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+        "Double Duke", doubleDuke,
+        "bread, cheese, bacon, onions, garlic, double patty, bacon, tomato"
       )
     );
     menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Burger Duke", burgerDuke,
+            "bread, cheese, cherry tomatoes, lettuce, garlic."
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Barbecue Duke", bbqDuke,
+            "bread, cheese, bacon, onions, garlic, patty, barbecue sauce, bacon"
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Crispy Fish ", crispyFish,
+            "bread, cheese, bacon, onions, garlic, bacon,fried fish patty"
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Oh Deer", ohDeer,
+            "bread, cheese, bacon, onions, garlic, bacon, deer patty, lettuce, bbq sauce"
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Omelette burger", omelet,
+            "bread, cheese, bacon, onions, garlic, omelette, patty, bacon"
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "King Buster", kingBuster,
+            "bread, cheese,double patty, bacon, onions,special sauce, garlic, bacon, bacon, bacon"
         )
       );
       menu.appendChild(
         createMenuItem(
-            "burger1", burger1,
-            "bread, cheese, bacon, onions, garlic, bacon, bacon, bacon"
+            "Keto burger", keto,
+            "patty, tomatoes, cheese"
+        )
+      );
+      menu.appendChild(
+        createMenuItem(
+            "El Paso Special", el,
+            "patty,bread, tomatoes, cheese,beans, hot sauce, tostilhas"
         )
       );
   

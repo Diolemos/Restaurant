@@ -5,15 +5,73 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark: rgba(47, 47, 47, 0.612);
+    --darker: rgba(41, 41, 41, 0.879);
+}
+
 body{
     width: 100vw;
     overflow-x: hidden;
-    
-    background-color: rgb(250, 235, 215);
-    color: black;
-
-    
+    text-align: center;
+   background-image: url("./assets/burgers/wallpaper.jpg");
+   background-size: cover;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto ;
+  grid-template-rows: 200px 1fr 100px;
    
-    
 }
 
+.header{
+    
+   position: relative;
+    width: 100%;
+    
+    background: var(--dark);
+   text-align: center;
+
+}
+.footer{
+    background:var(--dark);
+}
+
+.restaurant-name{
+    margin-top: 50px;
+}
+
+
+.header nav{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.main{
+    min-height: 800px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home{
+    background:var(--darker);
+    width: 50%;
+    min-height: 600px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.homeImage{
+    width: 200px
+}
+.menu-item{
+    width: 250px;
+    background-color: var(--darker);
+    color: #f5f5f5;
+}
+.menu-item img{
+    width: 180px;
+    height: 180px;
+}
