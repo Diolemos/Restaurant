@@ -87,10 +87,10 @@ body{
 }
 
 .button-nav:hover{
-    transform: translate(1.2);
+    transform: scale(1.2);
 }
 .button-nav:active{
-    transform: translate(0.9);
+    transform: scale(0.9);
 }
 
 .main{
@@ -124,6 +124,10 @@ body{
     justify-content: center;
     cursor: pointer;
     
+}
+
+.menu-item:first-child img{
+    width: 250px;
 }
 
 .menu-item{
