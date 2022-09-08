@@ -1,177 +1,171 @@
 /* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&family=Rye&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&family=Rye&family=Satisfy&display=swap");
 
-:root{
-    --dark: rgba(47, 47, 47, 0.612);
-    --darker: rgba(13, 13, 13, 0.879);
+:root {
+  --dark: rgba(47, 47, 47, 0.612);
+  --darker: rgba(13, 13, 13, 0.879);
 }
 
-body{
-    width: 100vw;
-    overflow-x: hidden;
-    text-align: center;
-   background-image: url("./assets/burgers/wallpaper.jpg");
-   background-size: cover;
-    color: rgb(255, 255, 255);
-    font-family: 'Dosis', sans-serif;
-    display: grid;
-    grid-template-columns: auto ;
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  text-align: center;
+  background-image: url("./assets/burgers/wallpaper.jpg");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  font-family: "Dosis", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
   grid-template-rows: 200px 1fr 100px;
-   
 }
 
-.header{
-    
-   position: relative;
-    width: 100%;
-    
-    background: var(--dark);
-   text-align: center;
+.header {
+  position: relative;
+  width: 100%;
 
+  background: var(--dark);
+  text-align: center;
 }
-.footer{
-    background:var(--dark);
-    display: flex;
-   position: relative;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Satisfy', cursive;
-    font-size: 1.6rem;
+.footer {
+  background: var(--dark);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.6rem;
 }
-.footer a{
-   
-    color: #f5f5f5;
-    text-align: none;
-    cursor: pointer;
-    position:absolute;
-   
-    top: 67%;
-    left: 50%;
-    transform: translate(-50%, 0)
+.footer a {
+  color: #f5f5f5;
+  text-align: none;
+  cursor: pointer;
+  position: absolute;
+
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
-.fa-github{
-    font-size: 1.6rem;
+.fa-github {
+  font-size: 1.6rem;
 }
 
-.restaurant-name{
-    margin-top: 50px;
-    font-size: 3.2rem;
-    font-family: 'Rye', cursive;
+.restaurant-name {
+  margin-top: 50px;
+  font-size: 3.2rem;
+  font-family: "Rye", cursive;
 }
 
-
-.header nav{
-    position: absolute;
-    right: 1.5rem;
-    bottom: 5px;
+.header nav {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 5px;
 }
-.button-nav{
-    background: none;
-    border: none;
-    color: #f5f5f5;
-    text-decoration: underline;
-    margin-right: 1rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    transition: all .2s ease-out;
-}
-
-.button-nav:hover{
-    transform: scale(1.2);
-}
-.button-nav:active{
-    transform: scale(0.9);
+.button-nav {
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  text-decoration: underline;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
-.main{
-    margin-top: 80px;
-    margin-bottom: 80px;
-    min-height: 800px;
-    display: flex;
+.button-nav:hover {
+  transform: scale(1.2);
+}
+.button-nav:active {
+  transform: scale(0.9);
+}
+
+.main {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: 800px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.home{
-    background:var(--darker);
-    width: 50%;
-    min-height: 600px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-evenly;
-    font-size: 2rem;
+.home {
+  background: var(--darker);
+  width: 50%;
+  min-width: 300px;
+  min-height: 600px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
 }
-.home p:first-child{
-    font-weight: 900;
-    font-size: 2.6rem;
-}
-
-.homeImage{
-    width: 200px
+.home p:first-child {
+  font-weight: 900;
+  font-size: 2.6rem;
 }
 
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 80px;
-    justify-content: center;
-    cursor: pointer;
-    
+.homeImage {
+  width: 200px;
 }
 
-.menu-item:first-child img{
-    width: 250px;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 80px;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.menu-item{
-    width: 350px;
-    height: 350px;
-    background-color: var(--darker);
-    color: #f5f5f5;
-    padding: 20px 8px;
-    font-size: 1.4rem;
-    transition:all .35s ease-out;
+.menu-item:first-child img {
+  width: 250px;
 }
 
-.menu-item:hover{
-    transform: scale(1.6);
-    background-color: black;
+.menu-item {
+  width: 350px;
+  height: 350px;
+  background-color: var(--darker);
+  color: #f5f5f5;
+  padding: 20px 8px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-out;
 }
 
-.menu-item h2{
-    font-size: 2rem;
-}
-.menu-item img{
-    width: 180px;
-    height: 180px;
+.menu-item:hover {
+  transform: scale(1.6);
+  background-color: black;
 }
 
-.contact{
- width: 600px;
- height: 600px;
- background-color: var(--darker);
- color: #f5f5f5;
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
- align-items: center;
- font-size: 2rem;
+.menu-item h2 {
+  font-size: 2rem;
+}
+.menu-item img {
+  width: 180px;
+  height: 180px;
 }
 
-.contact img{
-    width: 450px;
-    height: 266px;
-    border-radius: 20px;
+.contact {
+  width: 600px;
+  height: 600px;
+  background-color: var(--darker);
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.contact img {
+  width: 450px;
+  height: 266px;
+  border-radius: 20px;
 }
