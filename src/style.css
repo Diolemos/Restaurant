@@ -35,7 +35,7 @@ body{
 .footer{
     background:var(--dark);
     display: flex;
-   
+   position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -43,6 +43,13 @@ body{
     color: #f5f5f5;
     text-align: none;
     cursor: pointer;
+    position:absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+.fa-github{
+    font-size: 1.6rem;
 }
 
 .restaurant-name{
